@@ -16,8 +16,8 @@ You may also fetch headers from the response object:
 
     <?php
     $res = $app->response();
-    $contentType = $response['Content-Type'];
-    $poweredBy = $response['X-Powered-By'];
+    $contentType = $res['Content-Type'];
+    $poweredBy = $res['X-Powered-By'];
 
 If a header with the given name does not exist, `null` is returned. You may specify header names with upper, lower,
 or mixed case with dashes or underscores. Use the naming convention with which you are most comfortable.
